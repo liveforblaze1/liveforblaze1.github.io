@@ -58,13 +58,38 @@ a {
   flex: 1;
 }
 .firstScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  background: url('../img/moscow-bg.jpg') 50% 50% no-repeat;
-  background-size: 100vw 100vh;
+  background: url('../img/main.png') 50% 50% no-repeat;
+  background-size: 100vw;
 
 }
 .secondScreen {
   height: 100vh;
-  background: url('../img/moscow-bg.jpg') 50% 50% no-repeat;
+  background: url('../img/main.png') 50% 50% no-repeat;
   background-size: 100vw 100vh;
+}
+
+.block {
+  display: none;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 50%;
+  height: 50%;
+  background: #1d232c;
+  border-radius: 7px;
+  padding: 10px;
+  padding-left: 20px;
+  opacity: 0;
+  color: white;
+  transition: 3s linear;
+}
+.animatedBlock {
+  display: flex;
+  height: 80%;
+  width: 80%;
+  opacity: 1;
+  transition: 0.15s linear;
 }

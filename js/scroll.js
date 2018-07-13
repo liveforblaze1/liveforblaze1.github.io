@@ -6,3 +6,10 @@ window.onscroll = function() {
     document.getElementById('navbar').style.background = "rgba(29,35,44, 0.5)"
   }
 }
+
+function showBlock() {
+  var block = document.getElementById('block');
+  console.log("ShowBlock");
+  block.style.display = "flex";
+  setTimeout(function() { block.className += " animatedBlock" }, 300);
+}
