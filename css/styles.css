@@ -113,10 +113,10 @@ a {
 }
 .team-y {
   height: 100vh;
-  width: 600px;
+  min-width: 700px;
   flex: 1;
-  background: url('../img/y.png') 50% 50% no-repeat;
-  background-size: 90%;
+  background: url('../img/y2.png') 50% 50% no-repeat;
+  background-size: 450px 450px;
 }
 .flex-left {
   flex: 1;
