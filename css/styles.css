@@ -43,8 +43,23 @@ a {
 }
 .navbar-links ul li {
   display: inline-block;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-right: 20px;
+  border-left: 1px solid #1d232c;
+  border-right: 1px solid #1d232c;
+  height: 40px;
+  text-shadow: 0 0 28px #1d232c;
+  transition: 1s;
 }
+.navbar-links ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  text-shadow: 0 0 28px white;
+}
+
 .navbar-logo {
   display: flex;
   flex: 1;
@@ -70,6 +85,8 @@ a {
 .navbar-logout-button:hover {
   background-color: rgba(255,255,255, 0.1);
   cursor: pointer;
+  text-shadow: 0 0 28px white;
+  transition: 1s;
 }
 .firstScreen {
   display: flex;
