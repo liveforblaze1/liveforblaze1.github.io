@@ -19,38 +19,40 @@
       </div>
     </div>
     <div class="firstScreen" id="part1">
-      <div class="first-block" onclick="showBlock(1)" id="b1">
-        Why
-        <div>1. Only 3 DAYS to verification process </div>
-        <div>2. Absolutely SECURITY of personnel dates  </div>
-        <div>3. Getting passport is an EASY and FAST process  </div>
-        <div>4. The MINIMAL list of required DOCUMENTS   </div>
-        <div>5. Personal TRUST management system  </div>
-        <div>6. Considerable COST/TIME CUTTING  </div>
-      </div>
-      <div class="first-block" onclick="showBlock(2)" id="b2">
-        Who
-        <div>1.  Users </div>
-        <div>2. KYC companies </div>
-        <div>3.  End-user service providers:
-          <ul>
-            <li>- banks</li>
-            <li>- exchanges</li>
-            <li>- rental services</li>
-            <li>- travel operators</li>
-            <li>- many more</li>
-          </ul>
+      <div class="firstScreen-container">
+        <div class="first-block selected" id="but1" onclick="removeBlock(1)">
+          The Why
+        </div>
+        <div class="first-block" id="but2" onclick="removeBlock(2)">
+          The Who
+        </div>
+        <div class="first-block" id="but3">
+          The How
         </div>
       </div>
-      <div class="first-block" id="b3">How</div>
-      <div class="block" id="block1">
-        <h2 id="block-child2">WHY</h2>
-        <div id="block-child">Some text</div>
-      </div>
-      <div class="block" id="block2">
-        <h2 id="block-child2">WHO</h2>
-        <div id="block-child">Some text</div>
-      </div>
+      <div class="box-line">
+        <div class="firstScreen-box" id="b1">
+          1. Cryptopass allows you to SAVE TIME for more important things - it takes only 3 days to complete the validation process<br/><br/>
+          2. There is absolute SECURITY of personal data - we do not store your data on our servers; only the Cryptopass in your possession knows stuff about you. Thus only YOU DECIDE who you wish to share your personal details with.<br/><br/>
+          3. Getting Cryptopass is FAST & EASY - it takes only 5 minutes to register and get your Cryptopass with basic level of access<br/><br/>
+          4. A list of required documents is minimal - you only need three simple photos: government-issued passport or ID, a selfie with it and a document confirming your residence address<br/><br/>
+          5. TRUST LEVEL management system - we provide an opportunity to obtain different levels of trust depending on your needs and fulfill various requirements of service providers: exchanges, banks, car rental services, etc.<br/><br/>
+          6. Cryptopass technology offers considerable cost savings on KYC for service providers and accelerated personal data validation procedure for private individuals<br/>
+        </div>
+        <div class="firstScreen-box hide" id="b2">
+          <div>1.  Users </div>
+          <div>2. KYC companies </div>
+          <div>3.  End-user service providers:
+            <ul>
+              <li>- banks</li>
+              <li>- exchanges</li>
+              <li>- rental services</li>
+              <li>- travel operators</li>
+              <li>- many more</li>
+            </ul>
+          </div>
+        </div>
+    </div>
     </div>
   </body>
 </html>

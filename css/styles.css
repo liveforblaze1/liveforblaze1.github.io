@@ -91,14 +91,54 @@ a {
 .firstScreen {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 100vh;
   background: url('../img/main.png') 50% 50% no-repeat;
   background-size: 100vw;
 }
-.firstScreen-hide {
-  opacity: 0.07;
-  transition: 1s;
+.firstScreen-container {
+  display: flex;
+  height: 150px;
+  flex-direction: row;
+}
+.firstScreen-box {
+  display: flex;
+  position: absolute;
+  margin-top: 30px;
+  width: 700px;
+  min-height: 350px;
+  background: rgba(0,0,0,0.2);
+  color: white;
+  padding: 30px;
+  flex-direction: row;
+  font-family: 'GothamProRegular', 'Comic Sans MS';
+}
+.firstScreen-box-apear {
+  display: flex;
+  position: absolute;
+  margin-top: 30px;
+  width: 700px;
+  min-height: 350px;
+  background: rgba(0,0,0,0.2);
+  color: white;
+  padding: 30px;
+  flex-direction: row;
+  font-family: 'GothamProRegular', 'Comic Sans MS';
+  transition: 0.5s;
+}
+.box-remove {
+  margin-left: -50%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.box-line {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.hide {
+  display: none;
 }
 .secondScreen {
   height: 100vh;
@@ -124,13 +164,6 @@ a {
   opacity: 0;
   color: white;
   transition: 0.15s linear;
-}
-.animatedBlock {
-  display: flex;
-  height: 80%;
-  width: 80%;
-  opacity: 1;
-  transition: 0.3s linear;
 }
 .team-y {
   height: 100vh;
@@ -168,31 +201,16 @@ a {
 }
 .first-block {
   display: flex;
-  flex: 1;
   flex-direction: column;
+  width: 80px;
   margin-left: 30px;
-  min-height: 220px;
-  background: rgba(0,0,0,0.5);
-  padding: 15px;
+  padding: 20px;
   color: white;
-  margin-right: 20px;
-  border-radius: 8px;
+  margin-right: 10px;
+  margin-top: 100px;
   transition: 0.5s;
+  border-bottom: 3px solid white;
 }
-.first-block div {
-  display: flex;
-  flex-direction: column;
-  font-family: 'GothamProRegular', 'Comic Sans MS';
-  color: #d2ebff;
-  padding: 0;
-  margin: 0;
-  margin-top: 10px;
-}
-.first-block div ul {
-  list-style: none;
-  margin-top: 0px;
-  margin-left: -20px;
-}
-.first-block div:first-child {
-  margin-top: 20px;
+.selected {
+  border-bottom: 3px solid #1d232c;
 }
